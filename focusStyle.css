@@ -1,0 +1,183 @@
+body {
+    background-color: black;
+    color: green;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.heading {
+    font-size: 4em;
+    margin-top:30px;
+    margin-bottom: 20px;
+    animation: color-change 3s infinite;
+    font-family: cursive;
+    margin-top: 50px;
+}
+
+
+
+.color-changing-line {
+    width: 80%;
+    border: none;
+    height: 4px;
+    background: orange;
+    animation: color-change 3s infinite;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.chakra {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.chakri {
+    width: 180px; 
+    height: auto;
+    animation: rotate 4s linear infinite;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+
+
+
+.identity-list {
+    list-style-type: none;
+    margin: 2px;
+    padding: 0px ;
+    font-size: 1.5em;
+    font-family: cursive;
+    margin-top: 70px;
+
+}
+
+.identity-list li {
+    margin-bottom: 20px;
+    color: orangered;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.logo-img{
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    margin-right: -30px;
+    margin-top: -30px;
+}
+@keyframes color-change {
+    0% { color: orange; }
+    33% { color: white; }
+    66% { color: green; }
+    100% { color: orange; }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Large Desktops (min-width: 1200px) */
+@media (min-width: 1200px) {
+    .heading {
+        font-size: 4.3em;
+    }
+
+    .identity-list {
+        font-size: 1.5em;
+    }
+
+    .chakra {
+        top: 40px;
+        left: 40px;
+    }
+
+    .chakri{
+        margin-right: -40px;
+    }
+
+    .logo {
+        top: 40px;
+        right: 40px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 1.8em;
+        margin-left: -10px;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 40px;
+    }
+
+    .chakri {
+        width: 65px;
+        margin-left: -5px;
+        margin-top: -3px;
+    }
+
+    .identity-list {
+        font-size: 1.1em;
+        margin-top: 50px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .logo-img {
+        width: 85px;
+        margin-right: -10px;
+        margin-top: -5px;
+    }
+
+    .color-changing-line {
+        width: 90%;
+        margin-top: -10px;
+        height: 2px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 2em;
+    }
+
+    .chakri {
+        width: 65px;
+        margin-left: -5px;
+        margin-top: -2px;
+    }
+
+    .identity-list {
+        font-size: 1em;
+        margin-top: 40px;
+    }
+
+    .logo-img {
+        width: 85px;
+        margin-right: -10px;
+        margin-top: -10px;
+    }
+
+    .color-changing-line {
+        width: 100%;
+    }
+}
+
